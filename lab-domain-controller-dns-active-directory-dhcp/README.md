@@ -5,7 +5,7 @@
 - [Architecture](#architecture)
 - [Technologies](#technologies)
 - [Steps](#Step_by_step)
-- [Contributing](#contributing)
+- [Comments](#comments)
 - [License](#license)
 
 ## Overview
@@ -36,10 +36,10 @@ The usage of this home lab environment involves setting up and configuring the W
 - Join Computer to Domain
 - View Active Directory Computers
 
-## Contributing
+## Comments
 
-Contributions to enhance the functionality, documentation, or usability of this home lab environment are welcome. Please fork the repository, make your changes, and submit a pull request.
+Comments or Contributions to enhance the project or usability of this lab environment are welcome. 
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is a private one
