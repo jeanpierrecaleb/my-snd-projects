@@ -10,8 +10,7 @@
 
 ## Overview
 
-This project sets up a Windows Server home lab environment to set up essential services such as Active Directory, DNS, and DHCP. By simulating a small-scale network infrastructure we can test windows server
-environment.
+This project sets up a Windows Server home lab environment to set up essential services such as Active Directory, DNS, and DHCP and more. By simulating a small-scale network infrastructure we can test windows server environment and our applications.
 
 ## Architecture
 
