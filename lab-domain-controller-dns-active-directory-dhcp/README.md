@@ -14,7 +14,7 @@ This project sets up a Windows Server home lab environment to set up essential s
 
 ## Architecture
 
-[//]: # ![alt text](<Diagram-system.JPG>)
+[//]: # ![Diagram of the system](<Diagram-system.jpg>)
 
 ## Technologies
 
