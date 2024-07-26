@@ -1,0 +1,14 @@
+# Ignore Terraform provider binaries
+terraform/.terraform/providers/registry.terraform.io/hashicorp/aws/*/windows_amd64/terraform-provider-aws_*.exe
+
+# Ignore node modules
+/node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore compiled binary files
+*.exe
+
+# Ignore temporary files
+*.tmp
