@@ -27,3 +27,8 @@ variable "subnet-psids" {
   type        = list(string)
   description = "Subnet group"
 }
+
+variable "my_key_name" {
+  type = string
+  description = "Key of the instances"
+}

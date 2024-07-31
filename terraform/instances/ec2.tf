@@ -19,6 +19,22 @@ resource "aws_security_group" "ec2_sgp" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  # Allow SSH traffic
+  ingress {
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]  
+    # Adjust the CIDR block as needed, e.g., ["192.168.1.1/32"] for specific IP
+  }
+
+  ingress {
+    from_port   = 8080
+    to_port     = 8080
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]  # Allow traffic from any IP address
+  }
+
   # Inbound rule to allow ICMP traffic
   ingress {
     from_port   = -1 # Allows all ICMP traffic, not just Echo Requests
@@ -55,8 +71,13 @@ resource "aws_instance" "tf_ec2" {
   tags = {
     Name = "Tfec2 instance ${count.index + 1}"
   }
+  key_name = var.my_key_name
 }
 
 output "ip_address" {
   value = aws_instance.tf_ec2[*].public_ip
+}
+
+output "security_gp" {
+  value = [aws_security_group.ec2_sgp.id]
 }
