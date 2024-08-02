@@ -48,7 +48,7 @@ module "subnet" {
 module "instances" {
   source = "./instances" 
   my_vpc_id = aws_vpc.main_vpc.id
-  ec2_ami = "ami-0d7e17c1a01e6fa40"
+  ec2_ami = "ami-07c8c1b18ca66bb07"
   my_instance_type = "t3.micro" 
   subnet-psids = module.subnet.subnet_ids // error
   my_key_name  = "jenkins_kp"

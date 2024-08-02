@@ -14,6 +14,7 @@ variable "my_vpc_id" {
 variable "ec2_ami" {
   type        = string
   description = "ami of the instance in the subnet of a region"
+  default = "ami-07c8c1b18ca66bb07" #ubuntu server ami oh
 
 }
 

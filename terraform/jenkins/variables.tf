@@ -8,7 +8,8 @@ variable "j_itype" {
 variable "j_iami" {
   type = string
   description = "Jenkins ami"
-  default = "ami-0d7e17c1a01e6fa40"
+  default = "ami-07c8c1b18ca66bb07" #ubuntu ami
+  # amazon linux default = "ami-0d7e17c1a01e6fa40"
 }
 
 variable "j_iname" {
