@@ -16,7 +16,7 @@ COPY ./docker .
 # Make port 5000 available to the world outside this container
 EXPOSE 5000
 
-# Define environment variable
+# Define environment variable, not compulsory
 # ENV FLASK_APP=app.py
 
 # Run Flask app
