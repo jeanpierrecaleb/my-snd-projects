@@ -16,10 +16,10 @@ pipeline {
                 // Checkout the code from the repository
                 // checkout scm
                 // git url: 'https://github.com/jeanpierrecaleb/my-snd-projects/', branch: 'main'
-                checkout([$class: 'GitSCM', 
+                checkout scmGit([ //$class: 'GitSCM', 
                           userRemoteConfigs: [[url: 'https://github.com/jeanpierrecaleb/my-snd-projects']],
                           branches: [[name: '*/main']],
-                          relativeTargetDir: 'tree/main/terraform'])
+                          relativeTargetDir: 'terraform'])
             }
         }
 
