@@ -14,12 +14,14 @@
         state: present
         validate_certs: yes
 
+
     - name: Add Jenkins repository
       ansible.builtin.apt_repository:
         repo: deb http://pkg.jenkins.io/debian-stable binary/
         state: present
         filename: jenkins
         update_cache: yes
+
 
     - name: Install Java
       ansible.builtin.apt:
