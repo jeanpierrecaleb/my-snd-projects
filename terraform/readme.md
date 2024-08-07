@@ -1,4 +1,4 @@
-# Terraform
+# Terraform project
 ## Download and configure terraform
 ## Download a terraform extension for vscode
 ## Declare a cloud provider
