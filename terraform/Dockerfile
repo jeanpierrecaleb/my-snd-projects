@@ -5,7 +5,7 @@ FROM python:3.9-alpine
 WORKDIR /app
 
 # Copy the requirements file into the container at /app
-COPY requirements.txt .
+COPY ./docker/requirements.txt .
 
 # Install any needed packages specified in requirements.txt
 RUN pip install -r requirements.txt
