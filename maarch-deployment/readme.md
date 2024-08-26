@@ -20,7 +20,7 @@ This project deploys the MaarchCourrier application to a ubuntu server.
 We tools like :
 - MaarchCourrier source code
 - Ubuntu 22.04
-- Putty
+- Bitvise
 
 ## Steps
 First You need to :
